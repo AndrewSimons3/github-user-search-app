@@ -1,0 +1,81 @@
+@import './variables';
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 578px;
+
+		.form {
+			padding: 1rem 1rem 1rem 3rem;
+
+			.search-icon {
+				margin-right: 2rem;
+			}
+			#input {
+				font-size: 1.8rem;
+			}
+			#input::placeholder {
+				font-size: 1.8rem;
+			}
+
+			.search {
+				font-size: 1.6rem;
+				font-family: 'Space Mono';
+			}
+		}
+
+		.content {
+			.profile-header {
+				.profile-header-content {
+					h2 {
+						font-weight: 700;
+						font-size: 1.6rem;
+					}
+
+					a {
+						font-weight: 400;
+						font-size: 1.6rem;
+					}
+
+					span {
+						font-weight: 400;
+						font-size: 1.5rem;
+					}
+				}
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 1.5rem;
+			}
+			.profile-info {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				text-align: left;
+
+				.info {
+					h4 {
+						font-weight: 400;
+						font-size: 13px;
+					}
+
+					span {
+						font-weight: 700;
+						font-size: 2.2rem;
+					}
+				}
+			}
+
+			.social {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+
+				li {
+					a {
+						font-weight: 400;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}

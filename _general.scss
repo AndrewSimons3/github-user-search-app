@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #141d2f;
+	font-family: 'Space Mono', monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
