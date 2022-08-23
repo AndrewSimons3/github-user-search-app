@@ -328,9 +328,7 @@ section {
   .container .content {
     display: flex;
     padding: 4.8rem;
-  }
-  .container .content right {
-    padding: 0 0 0 2rem;
+    gap: 3rem;
   }
   .container .content .profile-pic-dsk {
     display: block;
