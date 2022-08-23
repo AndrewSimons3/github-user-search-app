@@ -328,13 +328,23 @@ section {
   .container .content {
     display: flex;
     padding: 4.8rem;
-    gap: 3.7rem;
+  }
+  .container .content right {
+    padding: 0 0 0 2rem;
   }
   .container .content .profile-pic-dsk {
     display: block;
     width: 117px;
     height: 117px;
     border-radius: 50%;
+  }
+  .container .content .profile-header .profile-header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .container .content .profile-header .profile-header-content .name-container .github-name {
+    font-size: 2.6rem;
   }
   .container .content .profile-header .profile-pic-tab-mob {
     display: none;
