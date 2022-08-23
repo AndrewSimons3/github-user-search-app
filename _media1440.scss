@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1440px) {
 	.container {
-		max-width: 730px;
+		min-width: 730px;
 
 		.content {
       display: flex;
