@@ -16,16 +16,21 @@
 			href="./assets/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="../output.css" />
+		<script defer src="../script.js" type="module"></script>
 		<title>Frontend Mentor | GitHub user search app</title>
 	</head>
-	<body>
+	<body id="body">
 		<main class="container">
 			<header>
 				<h1 class="logo">devfinder</h1>
 				<div class="toggle">
-					<span>light</span>
-					<img src="./assets/icon-sun.svg" alt="sun" />
+					<span class="light">light</span><span class="dark hide">dark</span>
+					<a class="toggle-btn">
+						<img src="./assets/icon-sun.svg" alt="sun" class="sun"/>
+            <img src="./assets/icon-moon.svg" alt="moon" class="moon hide" />
+					</a>
 				</div>
+		
 			</header>
 			<form action="#" class="form">
 				<img src="./assets/icon-search.svg" class="search-icon" alt="search" />
