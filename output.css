@@ -42,8 +42,32 @@ body {
   background-color: #f2f2f2;
 }
 
+.right section {
+  background-color: #141D2F;
+}
+
+h1,
+h2,
+h4,
+span,
+p,
+input,
+a,
+button {
+  color: #FFFFFF;
+}
+
+form,
+input,
+section {
+  background-color: #1E2A47;
+}
+
 .container .light-mode-container-bg {
   background-color: #FEFEFE;
+}
+.container .light-mode-container-bg-2 {
+  background-color: #F6F8FF;
 }
 .container .light-mode-text-1 {
   color: #4B6A9B;
@@ -60,20 +84,6 @@ body {
 .container .light-mode {
   background-color: #f2f2f2;
   color: #4B6A9B;
-}
-.container h1,
-.container h2,
-.container h4,
-.container span,
-.container p,
-.container input,
-.container input::placeholder,
-.container a,
-.container button {
-  color: #FFFFFF;
-}
-.container form, .container input, .container input::placeholder {
-  background-color: #1E2A47;
 }
 .container header {
   display: flex;
@@ -123,12 +133,13 @@ body {
 }
 .container .form #input {
   border: none;
+  padding: 1rem 0;
   width: 100%;
   font-size: 1.3rem;
   font-weight: 400;
 }
-.container .form .light-mode-container-bg {
-  background-color: #FEFEFE;
+.container .form #input:focus, .container .form textarea:focus {
+  outline: none;
 }
 .container .form #input::placeholder {
   font-weight: 400;
@@ -184,7 +195,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #141D2F;
   border-radius: 1rem;
   text-align: center;
   gap: 2.5rem;

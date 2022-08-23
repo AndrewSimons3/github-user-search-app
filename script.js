@@ -13,6 +13,14 @@ const input = document.getElementById('input');
 const content = document.querySelector('.content');
 const searchBtn = document.querySelector('.search');
 
+const githubName = document.querySelector('.github-name');
+const joined = document.querySelector('.joined');
+const summary = document.querySelector('.summary');
+const profileInfo = document.querySelector('.profile-info');
+const infoTitle = document.querySelectorAll('.info-title');
+const infoNum = document.querySelectorAll('.info-num');
+const socialLink = document.querySelectorAll('.social-link');
+
 toggleBtn.addEventListener('click', () => {
 	sun.classList.toggle('hide');
 	moon.classList.toggle('hide');
@@ -21,9 +29,20 @@ toggleBtn.addEventListener('click', () => {
 
 	body.classList.toggle('light-mode-bg');
 	logo.classList.toggle('light-mode-logo-color');
+	dark.classList.toggle('light-mode-text-1');
 	form.classList.toggle('light-mode-container-bg');
-	input.classList.toggle('light-mode-container-bg');
+	form.classList.toggle('light-mode-box-shadow');
 	content.classList.toggle('light-mode-container-bg');
+	content.classList.toggle('light-mode-box-shadow');
+	input.classList.toggle('light-mode-container-bg');
+	input.classList.toggle('light-mode-text-1');
+	githubName.classList.toggle('light-mode-text-heading');
+	joined.classList.toggle('light-mode-text-2');
+	summary.classList.toggle('light-mode-text-1');
+	profileInfo.classList.toggle('light-mode-container-bg-2');
+	infoNum.forEach((num) => num.classList.toggle('light-mode-text-2'));
+	infoTitle.forEach((title) => title.classList.toggle('light-mode-text-1'));
+	socialLink.forEach((link) => link.classList.toggle('light-mode-text-1'));
 });
 
 form.addEventListener('submit', getUserInfo);
@@ -39,75 +58,7 @@ function getUserInfo() {
 	} catch {}
 }
 
-
 function createProfile(data) {
-  console.log(data);
-  // return `
-  // <div class="content">
-	// 			<div class="left">
-	// 				<img
-	// 					src=${data.avatar_url}
-	// 					class="profile-pic-dsk"
-	// 					alt="profile pic dsk"
-	// 				/>
-	// 			</div>
-
-	// 			<div class="right">
-	// 				<div class="profile-header">
-	// 					<img
-	// 						src=${data.avatar_url}
-	// 						class="profile-pic-tab-mob"
-	// 						alt="profile picture"
-	// 					/>
-	// 					<div class="profile-header-content">
-	// 						<h2>${data.login}</h2>
-	// 						<a href="#">@${login}</a>
-	// 						<span>Joined 25 Jan 2011</span>
-	// 					</div>
-	// 				</div>
-	// 				<p class="summary">
-	// 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-	// 					odio. Quisque volutpat mattis eros.
-	// 				</p>
-	// 				<div class="profile-info">
-	// 					<div class="info">
-	// 						<h4>Repos</h4>
-	// 						<span>${public_repos}</span>
-	// 					</div>
-	// 					<div class="info">
-	// 						<h4>Followers</h4>
-	// 						<span>${followers}</span>
-	// 					</div>
-	// 					<div class="info">
-	// 						<h4>Following</h4>
-	// 						<span>${following}</span>
-	// 					</div>
-	// 				</div>
-
-	// 				<ul class="social">
-	// 					<li>
-	// 						<img src="./assets/icon-location.svg" alt="location" /><a href="#"
-	// 							>San Francisco</a
-	// 						>
-	// 					</li>
-	// 					<li>
-	// 						<img src="./assets/icon-website.svg" alt="website" /><a href="#"
-	// 							>https://github.blog</a
-	// 						>
-	// 					</li>
-	// 					<li>
-	// 						<img src="./assets/icon-twitter.svg" alt="twitter" /><a href="#"
-	// 							>Not Availble</a
-	// 						>
-	// 					</li>
-	// 					<li>
-	// 						<img src="./assets/icon-company.svg" alt="company" /><a href="#"
-	// 							>@github</a
-	// 						>
-	// 					</li>
-	// 				</ul>
-	// 			</div>
-	// 		</div>
-  // `;
-  
+	console.log(data);
+	githubName.innerHTML = data.login;
 }

@@ -1,56 +1,61 @@
 @import './variables';
 @import './general';
 
-  .light-mode-bg {
+.light-mode-bg {
 	background-color: $light-mode-background;
+}
+
+.right section {
+	background-color: $black;
+}
+
+h1,
+h2,
+h4,
+span,
+p,
+input,
+
+a,
+button {
+	color: $white;
+}
+
+form,
+input,
+section {
+	background-color: $dark-blue;
 }
 
 .container {
-
-
-
-.light-mode-container-bg {
-	background-color: $light-mode-container-bg;
-}
-
-.light-mode-text-1 {
-	color: $navy;
-}
-
-.light-mode-text-2 {
-	color: $gray;
-}
-
-.light-mode-text-heading {
-	color: $dark-gray;
-}
-
-.light-mode-box-shadow {
-	box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-}
-
-.light-mode {
-	background-color: $light-mode-background;
-	color: $navy;
-}
-	
-
-	h1,
-	h2,
-	h4,
-	span,
-	p,
-	input,
-	input::placeholder,
-	a,
-	button{
-		color: $white;
+	.light-mode-container-bg {
+		background-color: $light-mode-container-bg;
 	}
 
-  form, input, input::placeholder {
-    background-color: $dark-blue;
-  }
+	.light-mode-container-bg-2 {
+		background-color: $light-gray;
+	}
 
+	.light-mode-text-1 {
+		color: $navy;
+	}
+
+	.light-mode-text-2 {
+		color: $gray;
+	}
+
+	.light-mode-text-heading {
+		color: $dark-gray;
+	}
+
+	.light-mode-box-shadow {
+		box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+	}
+
+	.light-mode {
+		background-color: $light-mode-background;
+		color: $navy;
+	}
 
 	header {
 		display: flex;
@@ -72,10 +77,9 @@
 			justify-content: center;
 			gap: 1rem;
 
-      .hide {
-        display: none;
-      }
-      
+			.hide {
+				display: none;
+			}
 
 			.light {
 				font-weight: 700;
@@ -85,32 +89,28 @@
 				letter-spacing: 2.5px;
 			}
 
-      .dark {
-        font-weight: 700;
+			.dark {
+				font-weight: 700;
 				font-size: 1.3rem;
 
 				text-transform: uppercase;
 				letter-spacing: 2.5px;
-        
-      }
+			}
 
-      .moon {
-        
-      }
+			.moon {
+			}
 		}
 	}
 
 	.form {
 		width: 100%;
 		padding: 0.75rem;
-		
+
 		border-radius: 1.5rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		margin-bottom: 1.6rem;
-
-
 
 		.search-icon {
 			margin-right: 0.9rem;
@@ -118,16 +118,16 @@
 
 		#input {
 			border: none;
-			
+      padding: 1rem 0;
 			width: 100%;
 			font-size: 1.3rem;
 
 			font-weight: 400;
 		}
 
-      .light-mode-container-bg {
-	background-color: $light-mode-container-bg;
-}
+    #input:focus, textarea:focus {
+      outline: none;
+    }
 
 		#input::placeholder {
 			font-weight: 400;
@@ -147,7 +147,6 @@
 	}
 
 	.content {
-		
 		border-radius: 1.5rem;
 		padding: 2.4rem;
 
@@ -198,7 +197,7 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			background-color: $black;
+
 			border-radius: 1rem;
 			text-align: center;
 			gap: 2.5rem;
@@ -245,5 +244,3 @@
 }
 
 // ****** LIGHT MODE CLASSES ********
-
-
