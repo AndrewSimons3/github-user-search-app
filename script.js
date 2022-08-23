@@ -103,20 +103,24 @@ function updateProfile(data) {
 		location.innerHTML = 'Not Available';
 	} else {
 		location.innerHTML = data.location;
+		location.href = `www.google.com/maps/place/${data.location}`;
 	}
 	if (data.twitter_username === null) {
 		twitter.innerHTML = 'Not Available';
 	} else {
 		twitter.innerHTML = data.twitter_username;
+		twitter.href = `www.twitter.com/${data.twitter_username}`;
 	}
 	if (data.blog === null || data.blog === '') {
 		website.innerHTML = 'Not Available';
 	} else {
 		website.innerHTML = data.blog;
+		website.href = data.blog;
 	}
 	if (data.html_url === null) {
 		github.innerHTML = 'Not Available';
 	} else {
 		github.innerHTML = data.html_url;
+		github.href = data.html_url;
 	}
 }
