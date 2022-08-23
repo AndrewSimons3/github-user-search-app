@@ -28,7 +28,7 @@ section {
 }
 
 .container {
-
+	margin-bottom: 2rem;
   min-width: 365px;
 	.light-mode-container-bg {
 		background-color: $light-mode-container-bg;
@@ -257,6 +257,15 @@ section {
 			}
 		}
 	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: blue;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
 
 // ****** LIGHT MODE CLASSES ********

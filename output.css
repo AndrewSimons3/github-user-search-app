@@ -13,6 +13,7 @@ body {
   background-color: #141d2f;
   font-family: "Space Mono", monospace;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -33,6 +34,7 @@ body {
   background-color: #141d2f;
   font-family: "Space Mono", monospace;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -64,6 +66,7 @@ section {
 }
 
 .container {
+  margin-bottom: 2rem;
   min-width: 365px;
 }
 .container .light-mode-container-bg {
@@ -244,6 +247,16 @@ section {
 }
 .container .content .social a:hover {
   text-decoration: underline;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: blue;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 @media screen and (min-width: 768px) {
