@@ -64,7 +64,8 @@ input.addEventListener('input', () => {
   errorMsg.style.display = 'none';
 })
 
-function getUserInfo() {
+function getUserInfo(e) {
+	e.preventDefault();
 	let inputVal = document.getElementById('input').value;
 
 	fetch(`https://api.github.com/users/${inputVal}`)
@@ -76,7 +77,7 @@ function getUserInfo() {
 }
 
 function updateProfile(data) {
-	
+	console.log(data)
 	const day = data.created_at.slice(8, 10);
 	const month = data.created_at.slice(5, 7);
 	const year = data.created_at.slice(0, 4);
@@ -103,13 +104,13 @@ function updateProfile(data) {
 		location.innerHTML = 'Not Available';
 	} else {
 		location.innerHTML = data.location;
-		location.href = `www.google.com/maps/place/${data.location}`;
+		location.href = `https://google.com/maps/place/${data.location}`;
 	}
 	if (data.twitter_username === null) {
 		twitter.innerHTML = 'Not Available';
 	} else {
 		twitter.innerHTML = data.twitter_username;
-		twitter.href = `www.twitter.com/${data.twitter_username}`;
+		twitter.href = `https://twitter.com/${data.twitter_username}`;
 	}
 	if (data.blog === null || data.blog === '') {
 		website.innerHTML = 'Not Available';
